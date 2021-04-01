@@ -1,0 +1,5 @@
+MinutnikPresenter.hpp:28:13:MinutnikPresenter::~MinutnikPresenter()	0	static
+MinutnikPresenter.cpp:10:6:virtual void MinutnikPresenter::activate()	0	static
+MinutnikPresenter.hpp:28:13:virtual MinutnikPresenter::~MinutnikPresenter()	8	static
+MinutnikPresenter.hpp:28:13:virtual void* MinutnikPresenter::_ZThn4_N17MinutnikPresenterD1Ev()	0	static
+MinutnikPresenter.cpp:4:1:MinutnikPresenter::MinutnikPresenter(MinutnikView&)	8	static
