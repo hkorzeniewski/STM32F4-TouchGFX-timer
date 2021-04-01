@@ -21,7 +21,7 @@ AbstractPainter.hpp:103:21:virtual uint8_t touchgfx::AbstractPainter::getAlpha()
 TypedText.hpp:68:13:touchgfx::TypedText::~TypedText()	0	static
 View.hpp:40:7:touchgfx::View<MinutnikPresenter>::~View()	0	static
 MinutnikViewBase.hpp:20:13:MinutnikViewBase::~MinutnikViewBase()	0	static
-MinutnikViewBase.cpp:68:6:virtual void MinutnikViewBase::setupScreen()	0	static
+MinutnikViewBase.cpp:69:6:virtual void MinutnikViewBase::setupScreen()	0	static
 Callback.hpp:362:8:touchgfx::Callback<MinutnikViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 Callback.hpp:392:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MinutnikViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:402:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = MinutnikViewBase; T1 = const touchgfx::AbstractButton&]	0	static
@@ -29,7 +29,7 @@ TypedText.hpp:68:13:virtual touchgfx::TypedText::~TypedText()	8	static
 Callback.hpp:362:8:virtual touchgfx::Callback<MinutnikViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 View.hpp:40:7:virtual touchgfx::View<MinutnikPresenter>::~View()	8	static
 MinutnikViewBase.hpp:20:13:virtual MinutnikViewBase::~MinutnikViewBase()	8	static
-MinutnikViewBase.cpp:73:6:void MinutnikViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+MinutnikViewBase.cpp:74:6:void MinutnikViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
 Drawable.hpp:299:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:218:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 HAL.hpp:226:17:static touchgfx::LCD& touchgfx::HAL::lcd()	0	static

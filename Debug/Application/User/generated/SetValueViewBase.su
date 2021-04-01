@@ -10,6 +10,7 @@ Drawable.hpp:444:18:virtual void touchgfx::Drawable::handleDragEvent(const touch
 Drawable.hpp:454:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
 Drawable.hpp:541:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
 Drawable.hpp:656:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+Container.hpp:154:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
 Screen.hpp:96:18:virtual void touchgfx::Screen::setupScreen()	0	static
 Screen.hpp:107:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:118:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
@@ -18,36 +19,50 @@ Screen.hpp:157:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	stati
 Widget.hpp:50:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
 TypedText.hpp:68:13:touchgfx::TypedText::~TypedText()	0	static
 View.hpp:40:7:touchgfx::View<SetValuePresenter>::~View()	0	static
-SetValueViewBase.hpp:24:18:virtual void SetValueViewBase::scrollWheelMinutesUpdateItem(MinutesContainer&, int16_t)	0	static
-SetValueViewBase.hpp:29:18:virtual void SetValueViewBase::scrollWheelSecondsUpdateItem(SecondContainer&, int16_t)	0	static
-SetValueViewBase.hpp:37:18:virtual void SetValueViewBase::setTime()	0	static
-DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = MinutesContainer; int SIZE = 4]	0	static
-DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = SecondContainer; int SIZE = 4]	0	static
+SetValueViewBase.hpp:27:18:virtual void SetValueViewBase::scrollWheelMinutesUpdateItem(MinutesContainer&, int16_t)	0	static
+SetValueViewBase.hpp:32:18:virtual void SetValueViewBase::scrollWheelMinutesUpdateCenterItem(SelectedMinuteContainer&, int16_t)	0	static
+SetValueViewBase.hpp:37:18:virtual void SetValueViewBase::scrollWheelSecondsUpdateItem(SecondContainer&, int16_t)	0	static
+SetValueViewBase.hpp:42:18:virtual void SetValueViewBase::scrollWheelSecondsUpdateCenterItem(SelectedSecondContainer&, int16_t)	0	static
+SetValueViewBase.hpp:50:18:virtual void SetValueViewBase::setTime()	0	static
+SetValueViewBase.cpp:129:6:void SetValueViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	24	static
+DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = MinutesContainer; int SIZE = 5]	0	static
+DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = SelectedMinuteContainer; int SIZE = 2]	0	static
+DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = SecondContainer; int SIZE = 5]	0	static
+DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = SelectedSecondContainer; int SIZE = 2]	0	static
 Callback.hpp:221:8:touchgfx::Callback<SetValueViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	0	static
 Callback.hpp:362:8:touchgfx::Callback<SetValueViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
-DrawableList.hpp:79:7:touchgfx::DrawableListItems<SecondContainer, 4>::~DrawableListItems()	16	static
-DrawableList.hpp:79:7:touchgfx::DrawableListItems<MinutesContainer, 4>::~DrawableListItems()	16	static
-SetValueViewBase.hpp:21:13:SetValueViewBase::~SetValueViewBase()	8	static
+DrawableList.hpp:79:7:touchgfx::DrawableListItems<SelectedSecondContainer, 2>::~DrawableListItems()	16	static
+DrawableList.hpp:79:7:touchgfx::DrawableListItems<SecondContainer, 5>::~DrawableListItems()	16	static
+DrawableList.hpp:79:7:touchgfx::DrawableListItems<SelectedMinuteContainer, 2>::~DrawableListItems()	16	static
+DrawableList.hpp:79:7:touchgfx::DrawableListItems<MinutesContainer, 5>::~DrawableListItems()	16	static
+SetValueViewBase.hpp:24:13:SetValueViewBase::~SetValueViewBase()	8	static
+ClickListener.hpp:35:7:touchgfx::ClickListener<touchgfx::ScrollWheelWithSelectionStyle>::~ClickListener()	0	static
 Callback.hpp:254:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = SetValueViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	16	static
 Callback.hpp:264:18:bool touchgfx::Callback<dest_type, T1, T2, T3>::isValid() const [with dest_type = SetValueViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	0	static
 Callback.hpp:392:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = SetValueViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:402:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = SetValueViewBase; T1 = const touchgfx::AbstractButton&]	0	static
 TypedText.hpp:68:13:virtual touchgfx::TypedText::~TypedText()	8	static
-DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<MinutesContainer, 4>::~DrawableListItems()	8	static
-DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<SecondContainer, 4>::~DrawableListItems()	8	static
+DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<MinutesContainer, 5>::~DrawableListItems()	8	static
+DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<SelectedMinuteContainer, 2>::~DrawableListItems()	8	static
+DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<SecondContainer, 5>::~DrawableListItems()	8	static
+DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<SelectedSecondContainer, 2>::~DrawableListItems()	8	static
 View.hpp:40:7:virtual touchgfx::View<SetValuePresenter>::~View()	8	static
+ClickListener.hpp:35:7:virtual touchgfx::ClickListener<touchgfx::ScrollWheelWithSelectionStyle>::~ClickListener()	8	static
 Callback.hpp:362:8:virtual touchgfx::Callback<SetValueViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 Callback.hpp:221:8:virtual touchgfx::Callback<SetValueViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	8	static
-SetValueViewBase.hpp:21:13:virtual SetValueViewBase::~SetValueViewBase()	8	static
-DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = MinutesContainer; int SIZE = 4]	8	static
-DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = SecondContainer; int SIZE = 4]	8	static
-SetValueViewBase.cpp:78:6:virtual void SetValueViewBase::setupScreen()	16	static
-SetValueViewBase.cpp:115:6:void SetValueViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	24	static
-SetValueViewBase.cpp:92:6:void SetValueViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+SetValueViewBase.hpp:24:13:virtual SetValueViewBase::~SetValueViewBase()	8	static
+DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = MinutesContainer; int SIZE = 5]	8	static
+DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = SelectedMinuteContainer; int SIZE = 2]	8	static
+DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = SecondContainer; int SIZE = 5]	8	static
+DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = SelectedSecondContainer; int SIZE = 2]	8	static
+ScrollWheelWithSelectionStyle.hpp:153:18:virtual void touchgfx::ScrollWheelWithSelectionStyle::initialize()	8	static
+SetValueViewBase.cpp:84:6:virtual void SetValueViewBase::setupScreen()	16	static
+ClickListener.hpp:51:18:void touchgfx::ClickListener<T>::handleClickEvent(const touchgfx::ClickEvent&) [with T = touchgfx::ScrollWheelWithSelectionStyle]	16	static
+SetValueViewBase.cpp:106:6:void SetValueViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
 Drawable.hpp:299:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:218:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 Box.hpp:40:5:touchgfx::Box::Box()	0	static
 ButtonWithLabel.hpp:134:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
 TextArea.hpp:47:5:touchgfx::TextArea::TextArea()	0	static
 Color.hpp:51:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	16	static
-SetValueViewBase.cpp:9:1:SetValueViewBase::SetValueViewBase()	88	static
+SetValueViewBase.cpp:9:1:SetValueViewBase::SetValueViewBase()	104	static

@@ -305,6 +305,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/containers/SecondContainer.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/SelectedMinuteContainer.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/containers/SelectedMinuteContainer.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/SelectedSecondContainer.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/containers/SelectedSecondContainer.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/MainPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/main_screen/MainPresenter.cpp</locationURI>
@@ -463,6 +473,16 @@
 			<name>Application/User/generated/SecondContainerBase.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/containers/SecondContainerBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/SelectedMinuteContainerBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/containers/SelectedMinuteContainerBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/SelectedSecondContainerBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/containers/SelectedSecondContainerBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/MainViewBase.cpp</name>

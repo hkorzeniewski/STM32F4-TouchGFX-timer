@@ -91,15 +91,20 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/setvalue_screen/SetValueView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/setvalue_screen/SetValueViewBase.hpp \
  ../../TouchGFX/gui/include/gui/setvalue_screen/SetValuePresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  ../../TouchGFX/gui/include/gui/containers/MinutesContainer.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/MinutesContainerBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ ../../TouchGFX/gui/include/gui/containers/SelectedMinuteContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SelectedMinuteContainerBase.hpp \
  ../../TouchGFX/gui/include/gui/containers/SecondContainer.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SecondContainerBase.hpp \
+ ../../TouchGFX/gui/include/gui/containers/SelectedSecondContainer.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SelectedSecondContainerBase.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp \
  ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp
 
@@ -285,7 +290,7 @@ Application/User/generated/FrontendApplicationBase.o: \
 
 ../../TouchGFX/gui/include/gui/setvalue_screen/SetValuePresenter.hpp:
 
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
 
@@ -299,9 +304,19 @@ Application/User/generated/FrontendApplicationBase.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 
+../../TouchGFX/gui/include/gui/containers/SelectedMinuteContainer.hpp:
+
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SelectedMinuteContainerBase.hpp:
+
 ../../TouchGFX/gui/include/gui/containers/SecondContainer.hpp:
 
 ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SecondContainerBase.hpp:
+
+../../TouchGFX/gui/include/gui/containers/SelectedSecondContainer.hpp:
+
+../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SelectedSecondContainerBase.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:
 
 ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
