@@ -65,4 +65,4 @@ Box.hpp:40:5:touchgfx::Box::Box()	0	static
 ButtonWithLabel.hpp:134:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
 TextArea.hpp:47:5:touchgfx::TextArea::TextArea()	0	static
 Color.hpp:51:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	16	static
-SetValueViewBase.cpp:9:1:SetValueViewBase::SetValueViewBase()	104	static
+SetValueViewBase.cpp:9:1:SetValueViewBase::SetValueViewBase()	96	static

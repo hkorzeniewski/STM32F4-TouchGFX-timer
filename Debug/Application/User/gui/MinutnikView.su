@@ -1,8 +1,8 @@
 Screen.hpp:107:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:157:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 MinutnikView.hpp:11:13:MinutnikView::~MinutnikView()	0	static
-MinutnikView.cpp:15:6:virtual void MinutnikView::tearDownScreen()	0	static
+MinutnikView.cpp:16:6:virtual void MinutnikView::tearDownScreen()	0	static
 MinutnikView.cpp:8:6:virtual void MinutnikView::setupScreen()	8	static
+MinutnikView.cpp:21:6:virtual void MinutnikView::handleTickEvent()	40	static
 MinutnikView.hpp:11:13:virtual MinutnikView::~MinutnikView()	8	static
-MinutnikView.cpp:20:6:virtual void MinutnikView::handleTickEvent()	24	static
 MinutnikView.cpp:3:1:MinutnikView::MinutnikView()	8	static
